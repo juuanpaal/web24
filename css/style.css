@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+/* For desktop: */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+/* For desktop: */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* For mobile: */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+[class*="col-"] {
+    padding: 15px;
+}
+
+.shadow {
+    box-shadow: 0 0 20px gainsboro;
+    border-radius: 10px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    nav li {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    nav ul {
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+nav li a {
+    color: rgb(18, 0, 110);
+}
+
+nav li:hover {
+    background-color:  rgb(0, 0, 0);
+}
+
+.text-right{
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+.py-3 {
+    padding: 16px 0;
+}
+.px-3 {
+    padding: 0 16px;
+}
+.p-3 {
+    padding: 16px;
+}
+
+.bg-azul-o {
+    background-color: rgb(170, 0, 222);
+}
+.bg-azul-c {
+    background-color: rgb(240, 249, 252);
+}
+.bg-orange {
+    background-color: orange;
+}
+.text-white {
+    color: white;
+}
+.text-red {
+    color: red;
+    font-size: 30px;
+    background-color: cyan;
+}
+footer h1 {
+    border-bottom-left-radius: 10px;
+}
+footer h1 {
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#btnmenu {
+    font-size: 40px;
+    display: none;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    #btnmenu {
+        display: inline;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1000px)  {
+    #menu{
+        display: block;
+    }
+}
+
+.etiqueta {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+}
+.atributo {
+    color: rgb(34, 255, 0);
+    font-size: 28px;
+    font-weight: bold;
+}
+.enlace {
+    color: rgb(255, 0, 157);
+    font-size: 28px;
+    font-weight: bold;
+}
+#listas .descripcion li {
+    list-style-type: square;
+}
+#listas .descripcion li li {
+    list-style-type: disc;
+}
+#listas .descripcion li li li{
+    list-style-type: circle;
+}
+#listas .ordenar li {
+    list-style-type: upper-roman;
+}
+#listas .ordenar li li {
+    list-style-type: upper-alpha;
+}
+#listas .ordenar li li li{
+    list-style-type: decimal;
+}
+#listas .icono li li {
+    list-style-image: url("../img/logocito.png");
+}
+#listas .icono li li li{
+    list-style-image: none;
+    list-style-type: circle;
+}
+#listas .listadefinicion  {
+    width: 30%;
+}
+#listas .listadefinicion dt {
+    display: inline;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 1, 1);
+    font-size: 22px;
+    font-weight: bold;
+}
+table.horario {
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+table.horario td {
+    color: black;
+}
+table.horario th {
+    background-color: #f0f0f0;
+    color: #008080;
+}
+table.horario th.grupo {
+    font-size: 26px;
+    font-style: Arial;
+}
+.sasp {
+    background-color: #28c8c8;
+}
+.ende {
+    background-color: #c9a0c8;
+}
+.dasp {
+    background-color: #ffff63;
+}
+.prog {
+    background-color: #64b4ef;
+}
+.sisi {
+    background-color: #65aa97;
+}
+.ipcg {
+    background-color: #fea062;
+}
+.bdd {
+    background-color: #81ff81;
+}
+.lmsg {
+    background-color: #d2d26e;
+}
+.pimd {
+    background-color: #fec997;
+}
+.ipe {
+    background-color: #fe8181;
+}
+.col3 {
+    width: 33.3%;
+    float: left;
+}
+.col3 img {
+    padding: 4px;
+}
+video {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+audio {
+    display: block;
+    margin: 0 auto;
+}
+.text-center {
+    text-align: center;
+}
+body{
+    background:#000;
+}
